@@ -14,7 +14,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* COLORS */
@@ -53,7 +53,7 @@ h3 {
   margin: 1rem auto;
   padding: 0;
   gap: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .logo-img {
@@ -73,11 +73,20 @@ nav {
   flex-wrap: wrap;
   gap: 3rem;
   padding: 1rem;
+  background-color: var(--jasper);
+  color: var(--champagne-pink);
 }
 
 .nav-items-container li {
   list-style: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
+}
+.nav-items-container a {
+  text-decoration: none;
+  color: var(--champagne-pink);
+  transition: all 0.3s ease-in-out;
+}
+.nav-items-container a:hover {
+  color: var(--dark-purple);
 }
